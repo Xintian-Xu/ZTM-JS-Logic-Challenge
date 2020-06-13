@@ -1,11 +1,11 @@
 const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
-
+const array2 = ['1',2,4,591,392,391,2,5,10,2,'1',1,1,20,20];
 function clean(array) {
 	array.sort(function(a, b) {return a-b});
 	const answer = [];
 	let temp = [];
 	
-	for (i = 0; i < (array.length-1); i++){
+	for (let i = 0; i < (array.length-1); i++){
 		if (array[i]===array[i+1]){
 			temp.push(array[i]);
 		}
@@ -25,4 +25,6 @@ function clean(array) {
 }
 
 const cleaned = clean(array);
+const cleaned2 = clean(array2);
 console.log(cleaned);
+console.log(cleaned2);
