@@ -1,0 +1,3 @@
+function targetAdd(array, target){
+	
+}
