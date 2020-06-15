@@ -24,7 +24,7 @@ function hexToRgb(color){
 	const g = parseInt(temp[1], 16);
 	const b = parseInt(temp[2], 16);
 
-	return `You entered hex color ${color}, this color converted to RGB is (${r}, ${g}, ${b})`;
+	return `You entered hex color ${color}, this color converted to RGB is rgb(${r}, ${g}, ${b})`;
 
 }
 
